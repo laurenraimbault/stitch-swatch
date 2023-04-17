@@ -1,4 +1,10 @@
 import os
-os.system('git add -A')
-os.system('git commit -m "Update files."')
-os.system('git push')
+
+def executeCommand(cmd):
+    print(cmd)
+    os.system(cmd)
+    print('')
+
+executeCommand('git add -A')
+executeCommand('git commit -m "Update files."')
+executeCommand('git push')
