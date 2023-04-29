@@ -1,20 +1,37 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f8cba9;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    padding: 8px;
-  }
+@font-face {
+  font-family: sunnySpellsRegular;
+  src: url(sunnySpellsRegular.otf);
+}
 
-  li a:hover {
-    background-color: #dfb596;
-  }
+h1 {
+  font-family: 'sunnySpellsRegular';
+  text-align: center;
+  font-size: 50px;
+}
+
+/* CENTERS IMAGES */
+.centeredImage {
+  text-align: center;
+}
+
+/* NAVIGATION MENU */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f8cba9;
+}
+
+li {
+  float: left;
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+li:hover {
+  background-color: #d6a37c;
+}
