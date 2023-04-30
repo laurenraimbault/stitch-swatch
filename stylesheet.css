@@ -1,37 +1,104 @@
+/* FONTS */
 @font-face {
   font-family: sunnySpellsRegular;
   src: url(sunnySpellsRegular.otf);
 }
 
+@font-face {
+  font-family: varelaRoundRegular;
+  src: url(varelaRoundRegular.ttf);
+}
+
 h1 {
   font-family: 'sunnySpellsRegular';
   text-align: center;
-  font-size: 50px;
+  font-size: 75px;
 }
 
-/* CENTERS IMAGES */
+h2 {
+  font-family: 'sunnySpellsRegular';
+  font-size: 50px;
+  margin: 50px;
+  color: #e0dec7
+}
+
+p {
+  font-family: 'varelaRoundRegular';
+  font-size: 20px;
+  margin: 50px
+}
+
+ul li {
+  font-family: 'varelaRoundRegular';
+  font-size: 20px;
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #e0dec7
+}
+
+/* IMAGES */
 .centeredImage {
   text-align: center;
 }
 
 /* NAVIGATION MENU */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.navbar {
   background-color: #f8cba9;
+  overflow: hidden;
+  width: 661px;
+  margin: auto;
+  font-family: 'sunnySpellsRegular';
 }
 
-li {
+.navbar a {
   float: left;
-  display: block;
-  padding: 8px;
+  color: white;
+  padding: 1px 12px;
   text-decoration: none;
-  font-size: 20px;
+  font-family: 'varelaRoundRegular';
+  font-size: 16px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 50px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #e0dec7;
   color: white;
 }
 
-li:hover {
-  background-color: #d6a37c;
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #e0dec7;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdownContent a{
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
 }
