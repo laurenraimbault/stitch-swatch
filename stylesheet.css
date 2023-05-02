@@ -9,22 +9,27 @@
   src: url(varelaRoundRegular.ttf);
 }
 
+@font-face {
+  font-family: rustyHooksRegular;
+  src: url(rustyHooksRegular.ttf)
+}
+
 h1 {
   font-family: 'sunnySpellsRegular';
   text-align: center;
-  font-size: 75px;
+  font-size: 50px;
 }
 
 h2 {
   font-family: 'sunnySpellsRegular';
-  font-size: 50px;
+  font-size: 35px;
   margin: 50px;
   color: #e0dec7
 }
 
 p {
   font-family: 'varelaRoundRegular';
-  font-size: 20px;
+  font-size: 15px;
   margin: 50px
 }
 
@@ -46,16 +51,16 @@ a {
 
 /* NAVIGATION MENU */
 .navbar {
-  background-color: #f8cba9;
+  background-color: white;
   overflow: hidden;
-  width: 661px;
+  width: 510px;
   margin: auto;
   font-family: 'sunnySpellsRegular';
 }
 
 .navbar a {
   float: left;
-  color: white;
+  color: #f8cb9f;
   padding: 1px 12px;
   text-decoration: none;
   font-family: 'varelaRoundRegular';
@@ -68,18 +73,21 @@ a {
 }
 
 .dropdown .dropbtn {
-  font-size: 50px;
+  font-size: 35px;
   border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
+  color: #f8cb9f;
+  padding: 3px 16px;
   background-color: inherit;
   font-family: inherit;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #e0dec7;
+.navbar a:hover {
+  background-color: #d4d2b4;
   color: white;
+}
+
+.dropdown:hover .dropbtn {
+  color: #e0dec7
 }
 
 .dropdownContent {
