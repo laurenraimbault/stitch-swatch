@@ -9,11 +9,6 @@
   src: url(varelaRoundRegular.ttf);
 }
 
-@font-face {
-  font-family: rustyHooksRegular;
-  src: url(rustyHooksRegular.ttf)
-}
-
 h1 {
   font-family: 'sunnySpellsRegular';
   text-align: center;
